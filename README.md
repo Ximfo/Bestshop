@@ -1,3 +1,3 @@
 # Bestshop
 
-Andrzej Drzewiecki abc
+Andrzej Drzewiecki 
