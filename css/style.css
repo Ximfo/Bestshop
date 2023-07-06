@@ -9,7 +9,7 @@
     --color-white: #FFFFFF;
     --raleway: "Raleway", sans-serif;
     --sans: "Open Sans", sans-serif;
-    --btn-radius: 35px;
+    --btn-radius: 23px;
 }
 *{
     box-sizing: border-box;
@@ -63,10 +63,125 @@ header .container{
     margin-left: 136px;
 }
 
+.opening .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+}
+.open-content{
+    margin-top: 130px;
+    text-align: center;
+}
+.open-word{
+    font-family: var(--raleway);
+    font-size: 3.0625rem;
+    color: var(--color-black);
+}
+.open-p {
+    color: var(--color-black);
+    margin-top: 20px;
+    margin-bottom: 38px;
+}
+.btn{
+    display: inline-block;
+    color:var(--color-white);
+    font-weight: bold;
+    border-radius: var(--btn-radius);
+    padding: 16px 65px;
+}
+.btn-primary{
+    background: var(--color-primary);
+    box-shadow: 5px 10px 14px var(--color-primary-shadow);
+}
+.btn-open{
+    padding: 23px 157px;
+    border-radius: 40px;
+}
+.open-img{
+    width: 100%;
+    height: auto;
+}
+.stats .container{
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+    height: 100%;
+}
+.stats-word{
+    font-family: var(--raleway);
+    color: var(--color-black);
+    font-size: 2.25rem;
+    text-align: center;
+    padding: 100px 0;
+}
+.stats-content{
+    display: flex;
+    justify-content: center;
+}
+.stats-icon{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0 92.5px 121px 92.5px;
+}
+.circle{
+    width: 62.71px;
+    height: 62.71px;
+    border-radius: 50%;
+    position: relative;
 
-
-
-
+}
+.circle-red{
+    background: var(--color-red);
+}
+.circle-red::after{
+    content: "";
+    width: 44px;
+    height: 52px;
+    background-image: url("../assets/Person.svg");
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0;
+    left: 45%;
+}
+.circle-blue{
+    background: var(--color-primary);
+}
+.circle-blue::after{
+    content: "";
+    width: 65.43px;
+    height: 36.5px;
+    background-image: url("../assets/Eye.svg");
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 20%;
+    left: 30%;
+}
+.circle-green{
+    background: var(--color-green);
+}
+.circle-green::after{
+    content: "";
+    width: 52px;
+    height: 48px;
+    background-image: url("../assets/Catalog.svg");
+    position: absolute;
+    top: 10%;
+    left: 45%;
+}
+.stat-num{
+    font-family: var(--raleway);
+    font-size: 1.25rem;
+    font-weight: 800;
+    color: var(--color-black);
+    letter-spacing: 6px;
+    margin: 14px 0 19px 0;
+}
+.stat-description{
+    text-align: center;
+    font-family: var(--raleway);
+    color:var(--color-grey);
+}
 
 
 
