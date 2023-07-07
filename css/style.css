@@ -75,7 +75,7 @@ header .container{
     display: flex;
     flex-direction: column;
     align-items: center;
-    box-shadow: var(--shadow-page);
+    box-shadow: 0 -5px 80px #00000029;
 }
 .open-content{
     margin-top: 130px;
@@ -114,7 +114,7 @@ header .container{
 /* Stats section*/
 
 .stats .container{
-    box-shadow: var(--shadow-page);
+    box-shadow: 0px -5px 80px #00000029;
     height: 100%;
 }
 .stats-word{
@@ -201,7 +201,6 @@ header .container{
     flex-direction: column;
     align-items: center;
     background: var(--color-light-grey);
-    box-shadow: var(--shadow-page);
     height: 100%;
 }
 .line{
@@ -310,8 +309,99 @@ header .container{
     margin: 98px 82px 64px 62px;
 }
 
+/* Prices section*/
 
+.prices .container{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    border-left: 1px solid var(--color-light-grey);
+    border-right: 1px solid var(--color-light-grey);
+    height: 100%;
+}
+.prices-header{
+    font-family: var(--raleway);
+    font-size: 2.25rem;
+    color:var(--color-black);
+    margin-top: 100px;
+}
+.options{
+    display: flex;
+    justify-content: center;
+    margin-top: 71px;
+    column-gap: 70px;
+}
+.option{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid transparent;
+    border-radius: 18px;
+    width: 372px;
+    height: 461px;
+    position: relative;
+}
+.option-header{
+    font-family: var(--raleway);
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-top: 34px;
+    margin-bottom: 14px;
+}
+.price{
+    font-size: 2.875rem;
+    font-weight: 300;
+}
+.limited{
+    font-family: var(--raleway);
+    font-size: 0.75rem;
+    font-weight: bold;
+    margin-top: 5px;
+    margin-bottom: 50px;
+}
+.basic .price {
+    color: var(--color-red);
+    margin-bottom: 69px;
+}
+.professional .price{
+    color:var(--color-primary);
+}
+.premium .price {
+    color: var(--color-green);
+}
+.offer{
+    text-align: center;
+    font-size: 0.875rem;
+}
+.available{
+    margin-bottom: 20px;
+    list-style-image: url("../assets/Ckechmark-1.svg");
+    list-style-position: inside;
+}
+.available-not{
+    list-style-image: url("../assets/Close.svg");
+}
+.basic{
+    border-color: var(--color-red);
+}
+.professional{
+    border-color: var(--color-primary);
+    box-shadow: 5px 10px 27px var(--color-primary-shadow);
+    transform: scale(1.08);
+}
+.premium{
+    border-color: var(--color-green);
+}
+.btn-price{
+    position: absolute;
+    bottom: -25px;
+}
+.basic .btn-price{
+    background: var(--color-red);
+}
+.premium .btn-price{
+    background: var(--color-green);
+}
 
-
-
+/*  contact section*/
 
