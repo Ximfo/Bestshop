@@ -71,11 +71,14 @@ header .container{
 
 /* Opening section*/
 
+.opening{
+    box-shadow: 0 -5px 80px #00000029;
+}
 .opening .container{
     display: flex;
     flex-direction: column;
     align-items: center;
-    box-shadow: 0 -5px 80px #00000029;
+
 }
 .open-content{
     margin-top: 130px;
@@ -113,8 +116,10 @@ header .container{
 
 /* Stats section*/
 
+.stats{
+    box-shadow: 0 -5px 80px #00000029;
+}
 .stats .container{
-    box-shadow: 0px -5px 80px #00000029;
     height: 100%;
 }
 .stats-word{
@@ -196,11 +201,13 @@ header .container{
 
 /* Benefits section*/
 
+.benefits{
+    background: var(--color-light-grey);
+}
 .benefits .container{
     display: flex;
     flex-direction: column;
     align-items: center;
-    background: var(--color-light-grey);
     height: 100%;
 }
 .line{
@@ -404,4 +411,113 @@ header .container{
 }
 
 /*  contact section*/
+
+.contact{
+    box-shadow: var(--shadow-page);
+}
+.contact .container{
+    display: flex;
+    justify-content: center;
+    padding-top: 197px;
+    height: 100%;
+}
+.questions{
+    display: flex;
+    flex-direction: column;
+    padding-right: 114px;
+}
+.questions h1{
+    font-family: var(--raleway);
+    font-size: 3.0625rem;
+    margin-bottom: 22px;
+}
+.info{
+    display: flex;
+    align-items: center;
+    margin-top: 40px;
+}
+.info span{
+    margin-left: 10px;
+    margin-right: 20px;
+    color: var(--color-grey);
+}
+.enterform{
+    display: flex;
+    flex-direction: column;
+    width: 440px;
+}
+.label{
+    text-transform: uppercase;
+    font-size: 0.6875rem;
+    font-weight: bold;
+    letter-spacing: 3.28px;
+    color: var(--color-primary);
+
+}
+.enterform input{
+    border: none;
+    border-bottom: 1px solid var(--color-black);
+    margin-top: 15px;
+    margin-bottom: 30px;
+}
+
+.checkbox input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.checkbox {
+    cursor: pointer;
+    display: flex;
+    text-align: left;
+    font-size: 0.75rem;
+    letter-spacing: 0;
+    color: var(--color-grey);
+    opacity: 1;
+}
+
+.checkbox span {
+    height: 24px;
+    flex-shrink: 0;
+    flex-basis: 24px;
+    border: 1px solid var(--color-grey);
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.checkbox input:checked + span {
+    background-image: url("../assets/Checkmark.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.btn-contact{
+    border:none;
+    padding: 20px 97px;
+    border-radius: 35px;
+    margin-top: 20px;
+    margin-bottom: 78px;
+    margin-left: auto;
+}
+
+/* footer section */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
