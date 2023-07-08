@@ -514,7 +514,11 @@ footer .container {
     padding: 21px 136px 17px;
     height: 100%;
 }
-.footer-logo h2{
+.footer-logo{
+    display: flex;
+    flex-direction: column;
+}
+.footer-logo a{
     margin: 0;
     font-size: 1.625rem;
 }
