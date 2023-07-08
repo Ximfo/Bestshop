@@ -11,7 +11,7 @@
     --raleway: "Raleway", sans-serif;
     --sans: "Open Sans", sans-serif;
     --btn-radius: 23px;
-    --shadow-page: 0 3px 6px rgba(0, 0, 0, 0.16);
+    --shadow-page: rgba(0, 0, 0, 0.16);
 }
 /* base */
 *{
@@ -32,7 +32,7 @@ a{
 
 header{
     height: 70px;
-    box-shadow: var(--shadow-page);
+    box-shadow: 0 3px 6px var(--shadow-page);
 }
 header .container{
     display: flex;
@@ -71,9 +71,6 @@ header .container{
 
 /* Opening section*/
 
-.opening{
-    box-shadow: 0 -5px 80px #00000029;
-}
 .opening .container{
     display: flex;
     flex-direction: column;
@@ -117,7 +114,7 @@ header .container{
 /* Stats section*/
 
 .stats{
-    box-shadow: 0 -5px 80px #00000029;
+    box-shadow: 0 -5px 80px var(--shadow-page);
 }
 .stats .container{
     height: 100%;
@@ -506,10 +503,30 @@ header .container{
 
 /* footer section */
 
-
-
-
-
+footer{
+    background: var(--color-light-grey);
+    box-shadow: 0 -5px 40px var(--shadow-page);
+}
+footer .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 21px 136px 17px;
+    height: 100%;
+}
+.footer-logo h2{
+    margin: 0;
+    font-size: 1.625rem;
+}
+.footer-logo span{
+    font-size: 0.6875rem;
+    color: var(--color-grey);
+    margin-top: 6px;
+}
+.footer-icons{
+    display: flex;
+    column-gap: 20px;
+}
 
 
 
